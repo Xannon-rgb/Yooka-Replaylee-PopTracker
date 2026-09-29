@@ -5,7 +5,7 @@
       "download_url": "https://github.com/Xannon-rgb/Yooka-Replaylee-PopTracker/releases/download/v2.70/Yooka-Replaylee_PopTracker_v2.70.0.zip",
       "sha256": "cb888f3acaf48f3af84775d9102b3c599c1d6541e8b756dbf0d9e594c7cd8b98",
       "changelog": [
-        "Initial GitHub release. The release is labeled v2.70; the pack's internal version is 2.62.0."
+        "2.7 offers bug fixes and location adjustments, also this should now support auto updates to poptracker without the need to download each version update."
       ]
     }
   ]
