@@ -1,0 +1,12 @@
+{
+  "versions": [
+    {
+      "package_version": "2.62.0",
+      "download_url": "https://github.com/Xannon-rgb/Yooka-Replaylee-PopTracker/releases/download/v2.70/Yooka-Replaylee_PopTracker_v2.70.0.zip",
+      "sha256": "cb888f3acaf48f3af84775d9102b3c599c1d6541e8b756dbf0d9e594c7cd8b98",
+      "changelog": [
+        "Initial GitHub release. The release is labeled v2.70; the pack's internal version is 2.62.0."
+      ]
+    }
+  ]
+}
