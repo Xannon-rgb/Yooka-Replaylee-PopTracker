@@ -20,18 +20,3 @@ The pack points to [versions.json](https://raw.githubusercontent.com/Xannon-rgb/
 
 PopTracker uses this feed for pack updates. Older packs without the update URL need a one-time manual installation of the current release.
 
-## Publishing future versions
-
-- Change the pack files, then increase `package_version` inside `manifest.json`, for example to `2.71.0`. Update the displayed version labels too.
-- Preserve `package_uid` and `versions_url`.
-- ZIP the pack with `manifest.json` at the root.
-- Attach one ZIP named `Yooka-Replaylee_PopTracker_v2.71.0.zip` to the matching GitHub release, then publish it.
-- Confirm that **Update PopTracker release feed** succeeds in Actions. Drafts and prereleases are excluded.
-
-Renaming a ZIP alone does not change its internal version. This repository distributes complete packs through Releases; editing maintenance files does not rebuild the gameplay pack.
-
-## 2.70.0 validation
-
-The ZIP integrity, 18 JSON files, four Lua scripts' syntax, referenced image/layout files, and update-feed replacement/checksum handling have been checked. The launch correction changes only version metadata inside the pack.
-
-A live PopTracker session and real Archipelago connection still need a gameplay smoke test.
