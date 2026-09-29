@@ -1,11 +1,24 @@
 {
   "versions": [
     {
-      "package_version": "2.62.0",
+      "package_version": "2.70.0",
       "download_url": "https://github.com/Xannon-rgb/Yooka-Replaylee-PopTracker/releases/download/v2.70/Yooka-Replaylee_PopTracker_v2.70.0.zip",
-      "sha256": "cb888f3acaf48f3af84775d9102b3c599c1d6541e8b756dbf0d9e594c7cd8b98",
+      "sha256": "5de9fd77362de739641a5328858e012d89ab00516bde452ca3052a2ca3e7f611",
       "changelog": [
-        "2.7 offers bug fixes and location adjustments, also this should now support auto updates to poptracker without the need to download each version update."
+        "## Yooka-Replaylee PopTracker 2.70.0",
+        "",
+        "Download **Yooka-Replaylee_PopTracker_v2.70.0.zip** from Assets and drag it into PopTracker, or place it in your PopTracker packs folder without extracting it.",
+        "",
+        "- Internal pack version and all resolution preset labels now match 2.70.0.",
+        "- Includes HD, Full HD, 1440p, 4K, and horizontal layouts.",
+        "- The pack points to the automatic release update feed.",
+        "- Retains the maps, checks, items, and Archipelago logic from the supplied working build.",
+        "",
+        "Requires PopTracker 0.35.4 or later. Future published pack releases are added to the update feed automatically; PopTracker handles update checking and installation.",
+        "",
+        "The archived original ZIP is the earlier 2.62.0 build retained for recovery. GitHub's Source code downloads are repository snapshots, not installable tracker packs.",
+        "",
+        "Validation: ZIP integrity, JSON parsing, Lua syntax, referenced image/layout files, and update-feed checksum checks passed. Live gameplay and a real Archipelago connection have not been tested in this environment."
       ]
     }
   ]
