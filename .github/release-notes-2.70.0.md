@@ -1,0 +1,14 @@
+## Yooka-Replaylee PopTracker 2.70.0
+
+Download **Yooka-Replaylee_PopTracker_v2.70.0.zip** from Assets and drag it into PopTracker, or place it in your PopTracker packs folder without extracting it.
+
+- Internal pack version and all resolution preset labels now match 2.70.0.
+- Includes HD, Full HD, 1440p, 4K, and horizontal layouts.
+- The pack points to the automatic release update feed.
+- Retains the maps, checks, items, and Archipelago logic from the supplied working build.
+
+Requires PopTracker 0.35.4 or later. Future published pack releases are added to the update feed automatically; PopTracker handles update checking and installation.
+
+The archived original ZIP is the earlier 2.62.0 build retained for recovery. GitHub's Source code downloads are repository snapshots, not installable tracker packs.
+
+Validation: ZIP integrity, JSON parsing, Lua syntax, referenced image/layout files, and update-feed checksum checks passed. Live gameplay and a real Archipelago connection have not been tested in this environment.
