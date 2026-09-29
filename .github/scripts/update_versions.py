@@ -22,9 +22,16 @@ def fetch(url):
 def main():
     path = Path("versions.json")
     previous = json.loads(path.read_text())["versions"] if path.exists() else []
-    by_version = {entry["package_version"]: entry for entry in previous}
+    by_version = {}  # Rebuild from live assets; never retain stale download URLs/checksums.
     cached = {(entry["download_url"], entry.get("sha256")): entry for entry in previous}
-    releases = json.loads(fetch(f"https://api.github.com/repos/{REPO}/releases?per_page=100"))
+    releases = []
+    page = 1
+    while True:
+        batch = json.loads(fetch(f"https://api.github.com/repos/{REPO}/releases?per_page=100&page={page}"))
+        releases.extend(batch)
+        if len(batch) < 100:
+            break
+        page += 1
     # Process older releases first so the newest asset wins for a repeated version.
     for release in reversed(releases):
         if release["draft"] or release["prerelease"]:
@@ -69,6 +76,7 @@ def main():
             }
             if release["tag_name"].lstrip("v") != version:
                 print(f"Release {release['tag_name']} contains pack {version}; using internal version.")
+        entry["changelog"] = (release.get("body") or "Published release.").splitlines()
         by_version[entry["package_version"]] = entry
     if not by_version:
         raise ValueError("No published pack ZIPs found")
