@@ -1,6 +1,28 @@
 {
   "versions": [
     {
+      "package_version": "2.71.1",
+      "download_url": "https://github.com/Xannon-rgb/Yooka-Replaylee-PopTracker/releases/download/v2.71.1/Yooka-Replaylee_PopTracker_v2.71.1.zip",
+      "sha256": "6460be5110b5ec251b222de06612e34758f1040ffa1ca5ac0fb380e193c9978c",
+      "changelog": [
+        "v2.71.1 \u2014 Automatic World Switching",
+        "",
+        "New Feature: Automatic Map Switching",
+        "",
+        "PopTracker automatically switches maps when entering a new world.",
+        "",
+        "Automatically returns to the Hivory Towers map when leaving a world.",
+        "",
+        "Supports all six world maps.",
+        "",
+        "Preserves existing item tracking, location checks, and map functionality.",
+        "",
+        "Important: Automatic world switching requires the updated MelonLoader Archipelago mod from the main Yooka-Replaylee Archipelago page. Please update your MelonLoader mod to use this feature.",
+        "",
+        "Requires PopTracker 0.35.4 or later."
+      ]
+    },
+    {
       "package_version": "2.70.0",
       "download_url": "https://github.com/Xannon-rgb/Yooka-Replaylee-PopTracker/releases/download/v2.70/Yooka-Replaylee_PopTracker_v2.70.0.zip",
       "sha256": "5de9fd77362de739641a5328858e012d89ab00516bde452ca3052a2ca3e7f611",
